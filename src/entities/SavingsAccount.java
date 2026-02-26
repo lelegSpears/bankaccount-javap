@@ -1,26 +1,26 @@
 package entities;
 
 public class SavingsAccount extends Account{
-	private Double interestRate;
+	private double interestRate;
 	
 	public SavingsAccount() {
 		
 	}
 
-	public SavingsAccount(Double interestRate) {
+	public SavingsAccount(double interestRate) {
 		this.interestRate = interestRate;
 	}
 
-	public SavingsAccount(Integer numero, String holder, Double balance, Double interestRate) {
+	public SavingsAccount(int numero, String holder, double balance, double interestRate) {
 		super(numero, holder, balance);
 		this.interestRate = interestRate;
 	}
 	
-	public Double getInterestRate() {
+	public double getInterestRate() {
 		return interestRate;
 	}
 
-	public void setInterestRate(Double interestRate) {
+	public void setInterestRate(double interestRate) {
 		this.interestRate = interestRate;
 	}
 
@@ -28,3 +28,4 @@ public class SavingsAccount extends Account{
 		Balance += Balance * interestRate;
 	}
 }
+
