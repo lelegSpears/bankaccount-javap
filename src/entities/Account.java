@@ -1,50 +1,46 @@
 package entities;
 
 public class Account {
-	private Integer Numero;
-	private String Holder;
-	protected Double Balance;
+	private int numero;
+	private String holder;
+	protected double balance;
 	
 	public Account() {
 
 	}
 
-	public Account(Integer numero, String holder, Double balance) {
-		Numero = numero;
-		Holder = holder;
-		Balance = balance;
+	public Account(int numero, String holder, double balance) {
+		numero = numero;
+		holder = holder;
+		balance = balance;
 	}
 
-	public Integer getNumero() {
-		return Numero;
+	public int getNumero() {
+		return numero;
 	}
 
-	public void setNumero(Integer numero) {
-		Numero = numero;
+	public void setNumero(int numero) {
+		numero = numero;
 	}
 
 	public String getHolder() {
-		return Holder;
+		return holder;
 	}
 
 	public void setHolder(String holder) {
-		Holder = holder;
+		holder = holder;
 	}
 
-	public Double getBalance() {
-		return Balance;
+	public double getBalance() {
+		return balance;
 	}
 
-	public void withdraw(Double amount) {
-		Balance -= amount;
+	public void withdraw(double amount) {
+		balance -= amount;
 	}
 	
-	public void deposit(Double amount) {
-		Balance += amount;
+	public void deposit(double amount) {
+		balance += amount;
 	}
-	
-	
-	
-	
-	
 }
+
