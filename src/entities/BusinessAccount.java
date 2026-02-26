@@ -1,13 +1,13 @@
 package entities;
 
 public class BusinessAccount extends Account{
-	private Double loanLimit;
+	private double loanLimit;
 	
 	public BusinessAccount() {
 		
 	}
 
-	public BusinessAccount(Integer numero, String holder, Double balance, Double loanLimit) {
+	public BusinessAccount(int numero, String holder, double balance, double loanLimit) {
 		super(numero, holder, balance);
 		this.loanLimit = loanLimit;
 	}
@@ -19,3 +19,4 @@ public class BusinessAccount extends Account{
 	}
 	
 }
+
